@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="155dp"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="83dp">
+
+        <ImageView
+            android:id="@+id/profilePictire"
+            android:layout_width="150dp"
+            android:layout_height="135dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/profilepicture" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/editprofile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="9dp"
+            android:background="@android:color/transparent"
+            android:layout_alignBaseline="@+id/back"
+            android:layout_alignBottom="@+id/back"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/changePic"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="102dp"
+            android:layout_marginEnd="15dp"
+            android:background="@android:color/transparent"
+            android:layout_above="@+id/editUserName"
+            android:layout_alignEnd="@+id/save" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/currentPassword"
+        android:layout_below="@+id/currentPassword"
+        android:ems="8"
+        android:inputType="textPassword"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/currentPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="117dp"
+        android:ems="8"
+        android:inputType="textPassword"
+        android:textSize="10sp"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_toEndOf="@+id/frameLayout2" />
+
+    <EditText
+        android:id="@+id/confirmNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPassword"
+        android:textSize="10sp"
+        android:layout_below="@+id/newPassword"
+        android:layout_alignStart="@+id/newPassword" />
+
+</RelativeLayout>

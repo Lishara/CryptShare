@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "266334238409",
+    "firebase_url": "https://cryptshare-531b7.firebaseio.com",
+    "project_id": "cryptshare-531b7",
+    "storage_bucket": "cryptshare-531b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266334238409:android:8194a26b6f9c12a1",
+        "android_client_info": {
+          "package_name": "com.example.app.crypyshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266334238409-6jkstkcb63s33as9ss97a970fk5aq443.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app.crypyshare",
+            "certificate_hash": "9cda46bb21f7632a3b6ae5079f9ff8521c446a55"
+          }
+        },
+        {
+          "client_id": "266334238409-aa2us94mcojj9d460ocfjv7rfhe6tjev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXi8fkRVmMgjpASiCAI9AWFUcQNVuVkCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266334238409-aa2us94mcojj9d460ocfjv7rfhe6tjev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

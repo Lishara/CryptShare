@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/host1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/compose">
+
+    <Button
+        android:id="@+id/sendFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:background="@android:color/transparent"
+        android:text="                                                                                          "
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="228dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/fileName" />
+
+    <EditText
+        android:id="@+id/fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/selectFile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+    <Button
+        android:id="@+id/selectFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/contacts"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:text="Select File" />
+
+    <EditText
+        android:id="@+id/targetEmails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/sendFile"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the recepient emails seperated by commas."
+        android:layout_above="@+id/targetEmails"
+        android:layout_alignStart="@+id/selectFile" />
+
+    <TextView
+        android:id="@+id/filePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/selectFile"
+        android:layout_below="@+id/selectFile"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Name"
+        android:layout_alignBaseline="@+id/fileName"
+        android:layout_alignBottom="@+id/fileName"
+        android:layout_toStartOf="@+id/fileName" />
+
+</RelativeLayout>

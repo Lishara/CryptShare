@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/openingscreen"
+    tools:context="com.example.app.crypyshare.MainActivity">
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:text="Forgot Password"
+        android:textStyle="bold"
+        android:layout_above="@+id/signIn"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:ems="12"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/forgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/userName"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="15dp"
+        android:elevation="1dp"
+        android:text="Don't have an account?"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="                                                                                          "
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/signUp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

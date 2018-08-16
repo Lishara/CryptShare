@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CryptShare</string>
+
+    <!-- Pictures -->
+    <array name="profile_pics">
+        <item>@drawable/robert</item>
+        <item>@drawable/shanni</item>
+        <item>@drawable/rachael</item>
+        <item>@drawable/maddy_pic</item>
+        <item>@drawable/kate</item>
+        <item>@drawable/nikhil_pic</item>
+    </array>
+
+
+</resources>

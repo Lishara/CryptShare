@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/confirmation">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="                                                                                          "
+        android:visibility="visible"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:elevation="0dp"
+        android:text="Email :"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/emailEntered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/textView"
+        android:elevation="0dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:text="User Name :"
+        android:textSize="18sp"
+        android:layout_below="@+id/back"
+        android:layout_toStartOf="@+id/resend" />
+
+    <TextView
+        android:id="@+id/unameEntered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resend"
+        android:layout_alignStart="@+id/signUp"
+        android:text="We have sent you a confirmation email to your account to verify it. Please use it to verify and sign in. \nThank you -CryptShare Team-"
+        android:textStyle="bold|italic" />
+</RelativeLayout>
